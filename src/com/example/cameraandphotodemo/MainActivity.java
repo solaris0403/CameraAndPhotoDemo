@@ -52,7 +52,6 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-		// TODO Auto-generated method stub
 		super.onActivityResult(requestCode, resultCode, data);
 		if (REQUEST_CODE_CARMERA == requestCode && resultCode == Activity.RESULT_OK && data != null) {
 			Bitmap bitmap = (Bitmap) data.getExtras().get("data");
